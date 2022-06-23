@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 
+/* ::-webkit-scrollbar {
+  display: block;
+  }
+ */
+
 @layer components {
   .navBtn {
-    @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+    @apply hidden h-5 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+  }
+  .btn {
+    @apply h-6  hover:scale-125 cursor-pointer transition-all duration-150 ease-out
   }
 }
