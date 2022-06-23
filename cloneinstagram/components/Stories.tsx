@@ -37,7 +37,7 @@ function Stories() {
 
 
   return (
-    <div className='flex space-x-2 p-3 bg-white mt-3 border-gray-200 border rounded-sm overflow-x-scroll scrollbar-thin scrollbar-thumb-black'>
+    <div className='flex space-x-3 p-3 bg-white mt-5 border-gray-200 border rounded-sm overflow-x-scroll scrollbar-thin scrollbar-thumb-black'>
       {suggestions.map((profile: Props) => (
         <Story
           key={profile.id}

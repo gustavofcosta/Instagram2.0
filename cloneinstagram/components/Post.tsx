@@ -23,13 +23,13 @@ function Post({ username, userImg, img, caption }: PropsPosts) {
     <div className='bg-white my-3 border rounded-sm'>
 
       {/* Header */}
-      <div className='flex items-center p-1.5'>
+      <div className='flex items-center p-3'>
         <img
-          className='rounded-full h-9 w-9 border-red-500 object-cover border-2 p-0.5 mr-3'
+          className='rounded-full h-10 w-10 border-red-500 object-cover border-2 p-0.5 mr-3'
           src={userImg}
           alt="" />
         <p className='flex-1 text-sm font-bold'>{username}</p>
-        <DotsHorizontalIcon className='h-4' />
+        <DotsHorizontalIcon className='h-5' />
       </div>
 
       {/* img */}
@@ -50,7 +50,7 @@ function Post({ username, userImg, img, caption }: PropsPosts) {
 
       {/* Caption */}
       <div className='pt-4 px-4 truncate'>
-        <span className='font-bold mr-2'>
+        <span className='font-bold text-sm mr-2'>
           {username}
         </span>
         {caption}
@@ -62,10 +62,10 @@ function Post({ username, userImg, img, caption }: PropsPosts) {
       <form className='flex items-center py-2 px-4'>
         <EmojiHappyIcon className='h-6 cursor-pointer' />
         <input
-          className='border-none flex-1 focus:ring-0 outline-none'
+          className='border-none text-sm flex-1 focus:ring-0 outline-none'
           placeholder='Comentar'
           type="text" />
-        <button className='font-semibold text-blue-400'>
+        <button className='font-semibold text-sm text-blue-400'>
           Post
         </button>
       </form>
